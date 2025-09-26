@@ -1,4 +1,6 @@
-# notas Git para local
+# Notas Git
+
+## para local
 - `git-init`: initialize current folder as a git repository
 - `git clone <URL>`: brings the git repo from <URL> to current folder
 - `git config --global init.defaultBranch main`:to make `main` the default for all new repos
@@ -17,7 +19,8 @@
 	- `git checkout <HASH OR HEAD~>`: WARNING you forget <FILE>, you endup in a detached mode
 	- `git checkout main`: go back to main
 	- `git switch main`: go back to main
-#  para repositorio remoto
+
+##  para remoto
 - `git remote add <NAME> <URL>`: adds the URL as a remote with the name NAME
 	- `<NAME>` is by convention called `origin`
 - `git remote rm <NAME>`: removes the remote called NAME
