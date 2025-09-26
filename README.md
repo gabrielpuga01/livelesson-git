@@ -1,3 +1,4 @@
+# GIT NOTES
 - `git-init`: initialize current folder as a git repository
 - `git clone <URL>`: brings the git repo from <URL> to current folder
 - `git config --global init.defaultBranch main`:to make `main` the default for all new repos
@@ -22,4 +23,4 @@
 - `git remote -v`: look at all the remotes you have
 - `git push <WHERE> <WHAT>`: pushes the WHAT branch to WHERE
 	- `git push origin main`:example
- - `git pull <WHERE> <WHAT>`: pulls the WHAT branch in WHERE to local computer
+- `git pull <WHERE> <WHAT>`: pulls the WHAT branch in WHERE to local computer
