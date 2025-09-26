@@ -1,18 +1,24 @@
--`git-init`: initialize current folder as a git repository
--`git clone <URL>`: brings the git repo from <URL> to current folder
--`git config --global init.defaultBranch main`:to make `main` the default for all new repos
--`git status`: tell us what we need to know about our repository
--`git add <FILE>`: adds <FILE> to the staging area
--`git commit`: open a text editor to write commit messages 
-	-`git commit -m <MESSAGE>`: writes message as a commit without editor
--`git log`: shows the log (history) of our commits
-	-`git log--online`: shows the shorter online commit
--`git diff`:compare current uncommited state with last known git state
-	-`git diff --stagged`: runs git diff between staging area and last state
--`git diff HEAD~<NUMBER>`:compares HEAD with commit NUMBER ago (relative)
--`git diff <HASH>`: compares HEAD with the commit in HASH
--`git restore --source <HASH OR HEAD~> <FILE>`:restore file to <FILE> to <HASH OR HEAD~>
-	-`git checkout <HASH OR HEAD~> <FILE>`: restores file to <HASH OR HEAD~>
-	-`git checkout <HASH OR HEAD~>`: WARNING you forget <FILE>, you endup in a detached mode
-	-`git checkout main`: go back to main
-	-`git switch main`: go back to main
+- `git-init`: initialize current folder as a git repository
+- `git clone <URL>`: brings the git repo from <URL> to current folder
+- `git config --global init.defaultBranch main`:to make `main` the default for all new repos
+- `git status`: tell us what we need to know about our repository
+- `git add <FILE>`: adds <FILE> to the staging area
+- `git commit`: open a text editor to write commit messages 
+	- `git commit -m <MESSAGE>`: writes message as a commit without editor
+- `git log`: shows the log (history) of our commits
+	- `git log--online`: shows the shorter online commit
+- `git diff`:compare current uncommited state with last known git state
+	- `git diff --stagged`: runs git diff between staging area and last state
+- `git diff HEAD~<NUMBER>`:compares HEAD with commit NUMBER ago (relative)
+- `git diff <HASH>`: compares HEAD with the commit in HASH
+- `git restore --source <HASH OR HEAD~> <FILE>`:restore file to <FILE> to <HASH OR HEAD~>
+	- `git checkout <HASH OR HEAD~> <FILE>`: restores file to <HASH OR HEAD~>
+	- `git checkout <HASH OR HEAD~>`: WARNING you forget <FILE>, you endup in a detached mode
+	- `git checkout main`: go back to main
+	- `git switch main`: go back to main
+- `git remote add <NAME> <URL>`: adds the URL as a remote with the name NAME
+	- `<NAME>` is by convention called `origin`
+- `git remote rm <NAME>`: removes the remote called NAME
+- `git remote -v`: look at all the remotes you have
+- `git push <WHERE> <WHAT>`: pushes the WHAT branch to WHERE
+	- `git push origin main`:example
